@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/templates/basic_search.css" />
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h2 class="title">GSEARCH</h2>
+    <div class="wrapper">
+        <div id="searchbox" focus></div>
+        <div id="hits"></div>
+    </div>
+</body>
+<script
+    src="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/dist/instant-meilisearch.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
+<script>
+    const search = instantsearch({
+        indexName: "links",
+        searchClient: instantMeiliSearch(
+            "http://localhost:7700"
+        )
+    });
+    search.addWidgets([
+        instantsearch.widgets.searchBox({
+            container: "#searchbox",
+            placeholder: 'Search here ...'
+        }),
+        instantsearch.widgets.configure({ hitsPerPage: 8 }),
+        instantsearch.widgets.hits({
+            container: "#hits",
+            templates: {
+                item: `
+                    <div class="search_item">
+                        <a class="hit-name" href="{{link}}" target="_blank">
+                            <p><strong>{{#helpers.highlight}}{ "attribute": "title" }{{/helpers.highlight}}</strong></p>
+                            <p>{{#helpers.highlight}}{ "attribute": "link" }{{/helpers.highlight}}</p>
+                        </a>
+                    </div>
+                    `
+            }
+        })
+    ]);
+    search.start();
+</script>
+
+<script>
+        const search_content = document.querySelector('#hits')
+            const search_input = document.querySelector('.ais-SearchBox-input')
+            
+            search_input.addEventListener('focus', () => {
+                console.log('focussed')
+                search_content.style.display = 'block'
+            })
+</script>
+
+</html>
