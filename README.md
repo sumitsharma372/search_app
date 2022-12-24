@@ -35,8 +35,6 @@ docker run -it --rm \
 Open a new Terminal and cd to project directory and run ```npm install``` and then ```npm start```
 
 
->
-
 ### You can directly see my project online which I have deployed on **Render** and **Railway** Platforms
 
-       -- Deployed Link :  [https://search-app-y5se.onrender.com/](https://search-app-y5se.onrender.com/)
+   * Deployed Link :  [https://search-app-y5se.onrender.com/](https://search-app-y5se.onrender.com/)
