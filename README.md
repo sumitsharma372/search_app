@@ -4,6 +4,7 @@ The aim of the project is make a search app with good search Exprerience for bet
 I have used **Meilisearch** open source search engine to make this project a bit better and easier.
 
 <br>
+<br>
 
 > ## Run the project on Local Machine
 
