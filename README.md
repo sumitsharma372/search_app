@@ -18,6 +18,7 @@ I have used **Meilisearch** open source search engine to make this project a bit
 3. Go to the **localhost** url to check the app.
 
 
+<br>
 > ## If you have **DOCKER** installed run the following commands in order
 
 ```
@@ -35,6 +36,8 @@ docker run -it --rm \
 
 Open a new Terminal and cd to project directory and run ```npm install``` and then ```npm start```
 
+<br>
+<br>
 
 ### You can directly see my project online which I have deployed on **Render** and **Railway** Platforms
 
