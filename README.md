@@ -16,5 +16,5 @@ I have used **Meilisearch** open source search engine to make this project a bit
 > ## If you have **DOCKER** installed run the following commands in order
 
 ```
-hello
+docker pull getmeili/meilisearch:v0.30
 ```
