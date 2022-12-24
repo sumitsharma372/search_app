@@ -22,8 +22,8 @@
     const search = instantsearch({
         indexName: "links",
         searchClient: instantMeiliSearch(
-            "http://localhost:7700"
-        )
+            "https://meilisearch-production-36fb.up.railway.app","SomeKey321"
+        ),
     });
     search.addWidgets([
         instantsearch.widgets.searchBox({

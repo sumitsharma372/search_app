@@ -32,17 +32,20 @@ links.links.map(item => {
 })
 
 // ? -----------------------------------------
-// console.log(data[0])
+console.log(data[0])
 
 
-const client = new MeiliSearch({ host: 'http://localhost:7700', apiKey: 'MASTER_KEY'})
-client.deleteIndexIfExists('links');
-client.index('links').addDocuments(data)
-    .then(res => console.log(res))
+const client = new MeiliSearch({ host: 'https://meilisearch-production-36fb.up.railway.app/', apiKey: 'SomeKey321'})
+try {
+    client.index('links').addDocuments(data)
+        .then(res => console.log(res))
+} catch (error) {
+    console.log(error)
+}
 
 
-client.index('links').search('github')
-    .then(res => console.log(res))
+// client.index('links').search('github')
+//     .then(res => console.log(res))
 
 
 app.listen(port, () => console.log(`Listenting on port ${port}`))
