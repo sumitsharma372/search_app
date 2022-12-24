@@ -14,8 +14,7 @@ I have used **Meilisearch** open source search engine to make this project a bit
 
 
 > ## If you have **DOCKER** installed run the following commands in order
-      ```
-    docker pull getmeili/meilisearch:v0.30
+    ```docker pull getmeili/meilisearch:v0.30```
       
       
    docker run -it --rm \
@@ -25,5 +24,5 @@ I have used **Meilisearch** open source search engine to make this project a bit
      getmeili/meilisearch:v0.30 \
      meilisearch --env="development"
       
-      ```
+     
            
