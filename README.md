@@ -27,3 +27,5 @@ docker run -it --rm \
     getmeili/meilisearch:v0.30 \
     meilisearch --env="development"
 ```    
+
+Open a new Terminal and cd to project directory and run ```npm install``` and then ```npm start```
