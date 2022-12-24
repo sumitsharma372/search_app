@@ -3,8 +3,8 @@
 The aim of the project is make a search app with good search Exprerience for better user experience.
 I have used **Meilisearch** open source search engine to make this project a bit better and easier.
 
--
--
+
+
 > ## Run the project on Local Machine
 
 1. You need to run Meilisearch locally by following any of the installation guides mentioned [here](https://docs.meilisearch.com/learn/getting_started/quick_start.html#setup-and-installation)
