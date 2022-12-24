@@ -19,6 +19,7 @@ I have used **Meilisearch** open source search engine to make this project a bit
 
 
 <br>
+
 > ## If you have **DOCKER** installed run the following commands in order
 
 ```
