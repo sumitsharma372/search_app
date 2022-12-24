@@ -4,6 +4,9 @@ const express = require('express')
 const path = require('path')
 const app = express()
 
+const MEILI_URL = "https://meilisearch-production-36fb.up.railway.app/"
+const MEILI_API_KEY = "SomeKey321"
+
 const port = process.env.PORT || 5000;
 
 app.use(express.static(path.join(__dirname, 'public')))
@@ -35,7 +38,7 @@ links.links.map(item => {
 console.log(data[0])
 
 
-const client = new MeiliSearch({ host: 'https://meilisearch-production-36fb.up.railway.app/', apiKey: 'SomeKey321'})
+const client = new MeiliSearch({ host: MEILI_URL, apiKey: MEILI_API_KEY})
 try {
     client.index('links').addDocuments(data)
         .then(res => console.log(res))
