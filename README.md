@@ -9,8 +9,9 @@ I have used **Meilisearch** open source search engine to make this project a bit
 
 1. You need to run Meilisearch locally by following any of the installation guides mentioned [here](https://docs.meilisearch.com/learn/getting_started/quick_start.html#setup-and-installation)
 
-**NOTE** : - You need to to update MEILI_URL to ```localhost:7700``` and MEILI_API_KEY to ```<YourAPIKEY>``` if you are running on local
-           - Same for index.html file in public directory ( _line 25_ )
+ **NOTE** :
+           * You need to to update MEILI_URL to ```localhost:7700``` and MEILI_API_KEY to ```<YourAPIKEY>``` if you are running on local
+           * Same for index.html file in public directory ( _line 25_ )
 
 2. Open a New Terminal and run the command ```npm install``` and then ```npm start```
 3. Go to the **localhost** url to check the app.
@@ -32,3 +33,10 @@ docker run -it --rm \
 ```    
 
 Open a new Terminal and cd to project directory and run ```npm install``` and then ```npm start```
+
+
+>
+
+### You can directly see my project online which I have deployed on **Render** and **Railway** Platforms
+
+       -- Deployed Link :  [https://search-app-y5se.onrender.com/](https://search-app-y5se.onrender.com/)
