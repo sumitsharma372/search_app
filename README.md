@@ -10,7 +10,7 @@ I have used **Meilisearch** open source search engine to make this project a bit
 
 1. You need to run Meilisearch locally by following any of the installation guides mentioned [here](https://docs.meilisearch.com/learn/getting_started/quick_start.html#setup-and-installation)
 
- **NOTE** :
+  &nbsp **NOTE** :
            * You need to to update MEILI_URL to ```localhost:7700``` and MEILI_API_KEY to ```<YourAPIKEY>``` if you are running on local
            * Same for index.html file in public directory ( _line 25_ )
 
@@ -18,7 +18,7 @@ I have used **Meilisearch** open source search engine to make this project a bit
 3. Go to the **localhost** url to check the app.
 
 
-<br>
+<br><br>
 
 > ## If you have **DOCKER** installed run the following commands in order
 
