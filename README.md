@@ -23,19 +23,12 @@ I have used **Meilisearch** open source search engine to make this project a bit
 > ## If you have **DOCKER** installed run the following commands in order
 
 ```
-docker pull getmeili/meilisearch:v0.30
+docker pull sumit85/searchapp:1.0
 ```
 
 ```
-docker run -it --rm \
-    -p 7700:7700 \
-    -e MEILI_MASTER_KEY='MASTER_KEY'\
-    -v $(pwd)/meili_data:/meili_data \
-    getmeili/meilisearch:v0.30 \
-    meilisearch --env="development"
+docker run -p 5000:5000 sumit85/searchapp:1.0
 ```    
-
-Open a new Terminal and cd to project directory and run ```npm install``` and then ```npm start```
 
 <br>
 <br>
