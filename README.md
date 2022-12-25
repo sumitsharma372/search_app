@@ -1,6 +1,6 @@
 # search_app
 
-The aim of the project is make a search app which provides a quick and relevent search experience to the end users.
+The aim of the project is make a search app which provides a quick and relevent search experience to the end users.<br>
 I have used **Meilisearch** open source search API to make this project a bit better and easier.
 
 <br>
