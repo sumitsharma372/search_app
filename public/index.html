@@ -53,9 +53,14 @@
             const search_input = document.querySelector('.ais-SearchBox-input')
             
             search_input.addEventListener('focus', () => {
-                console.log('focussed')
                 search_content.style.display = 'block'
             })
+
+            document.addEventListener('focus', (event) => {
+                    if (search_input.contains(event.target)) {
+                        search_content.style.display = 'block'
+                    }
+                })
 
             document.addEventListener('click', (event) => {
             if (!search_input.contains(event.target)) {
